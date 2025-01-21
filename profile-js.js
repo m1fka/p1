@@ -186,9 +186,10 @@ function animate() {
     const average = dataArray.reduce((a, b) => a + b) / bufferLength;
 
     // Изменяем размер дива в зависимости от среднего значения
-    const scale = 1 + average / 256; // Нормируем значение
+    // const scale = 1 + average / 256; // Нормируем значение
+    const scale = 1 + average / 10; // Нормируем значение
     // avatarTelegram.style.transform = `rotate(${360}deg)`;
-    ratateTg+=0.7;
+    ratateTg+=1;
 
     avatarTelegram.style.transform = `scale(${scale}) rotate(${ratateTg}deg)`;
 
